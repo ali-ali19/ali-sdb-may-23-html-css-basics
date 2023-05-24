@@ -1,0 +1,74 @@
+/* 
+    CSS - Cascading style Sheets
+    Language that defines style and positioning of HTML Elements
+    
+    Ruleset
+    
+    Selector {
+        declaration
+        property: value;
+        property: value;
+        key: value;
+    }
+
+    Box Model
+    
+*/
+ 
+
+/* Wildcard Selector */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Element Selector */
+body {
+    background-color:darkgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ID selector */
+#nav-bar {
+    background-color: #4aa2a2;
+}
+
+/* Class selector */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: red;
+
+}
+
+.nav-link:focus {
+    background-color:rgb(55, 0, 255);
+}
+
+/* Compound selector */
+body > section > article img {
+    width: 300px;
+    height: 200px;
+}
+
+
+/* 
+    Order of Specificity
+    1. !important
+    2.in-line
+    3. ID Selectors
+    4. Class selectors
+    5. Element Selectors
+ */
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 1000px;
+    height: 100x;
+
+    background-color: orange;
+}
